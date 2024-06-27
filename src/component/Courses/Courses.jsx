@@ -17,6 +17,15 @@ const Courses = () => {
     margin: "0 auto",
   };
 
+  const videoItemStyle = {
+    marginBottom: "20px",
+  };
+
+  const iframeStyle = {
+    width: "100%",
+    height: "auto",
+  };
+
   return (
     <section className="courses">
       <Container>
@@ -31,7 +40,6 @@ const Courses = () => {
                   voluptatem recusandae reprehenderit!
                 </p>
               </div>
-
               <div className="w-50 text-end">
                 <button className="btn">See All</button>
               </div>
@@ -61,6 +69,46 @@ const Courses = () => {
                 style={courseImageStyle}
               />
               <h4>Watercolor Painting</h4>
+            </div>
+          </Col>
+        </Row>
+        <Row>
+          <div className="course__top d-flex justify-content-between align-items-center">
+            <div className="course__top__left w-50">
+              <h2>Our Demo Videos</h2>
+            </div>
+          </div>
+          <Col lg="4" md="6" sm="12">
+            <div className="video__item" style={videoItemStyle}>
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                style={iframeStyle}
+                title="Demo Video 1"
+                allowFullScreen
+              ></iframe>
+              <h4>Demo Video 1</h4>
+            </div>
+          </Col>
+          <Col lg="4" md="6" sm="12">
+            <div className="video__item" style={videoItemStyle}>
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                style={iframeStyle}
+                title="Demo Video 2"
+                allowFullScreen
+              ></iframe>
+              <h4>Demo Video 2</h4>
+            </div>
+          </Col>
+          <Col lg="4" md="6" sm="12">
+            <div className="video__item" style={videoItemStyle}>
+              <iframe
+                src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                style={iframeStyle}
+                title="Demo Video 3"
+                allowFullScreen
+              ></iframe>
+              <h4>Demo Video 3</h4>
             </div>
           </Col>
         </Row>
