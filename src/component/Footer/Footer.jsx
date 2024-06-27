@@ -51,7 +51,7 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="3" md="6" className="mb-4">
-            <h2 className=" d-flex align-items-center gap-1">SkillSphere™</h2>
+            <h5 className=" d-flex align-items-center gap-1">SkillSphere™</h5>
 
             <div className="follows">
               <p className="mb-0">Follow us on social media</p>
