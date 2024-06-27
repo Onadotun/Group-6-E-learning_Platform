@@ -73,12 +73,11 @@
   .mobile__menu {
     display: block;
   }
-
   .nav__right {
     display: none;
   }
 
-  .nav__menu.active__menu {
+  .active__menu {
     display: block;
   }
 }
