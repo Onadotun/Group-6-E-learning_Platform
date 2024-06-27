@@ -36,9 +36,7 @@ const Header = () => {
       <Container>
         <div className="navigation d-flex align-items-center justify-content-between">
           <div className="logo">
-            <h2 className="d-flex align-items-center">
-              <i className="ri-pantone-line"></i>SkillSphere
-            </h2>
+            <h2 className="d-flex align-items-center">SkillSphere™</h2>
           </div>
 
           <div className="nav d-flex align-items-center gap-5">
