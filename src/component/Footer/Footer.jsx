@@ -51,7 +51,12 @@ const Footer = () => {
       <Container>
         <Row>
           <Col lg="3" md="6" className="mb-4">
-            <h5 className=" d-flex align-items-center gap-1">SkillSphere™</h5>
+            <h5
+              className=" d-flex align-items-center gap-1"
+              style={{ color: "#3659D5" }}
+            >
+              SkillSphere™
+            </h5>
 
             <div className="follows">
               <p className="mb-0">Follow us on social media</p>

@@ -21,7 +21,9 @@ const HeroSection = () => {
             </div>
             <div className="search">
               <input type="text" placeholder="Search" />
-              <button className="btn">Search</button>
+              <button className="btn" style={{ background: "#3659D5" }}>
+                Search
+              </button>
             </div>
           </Col>
           <Col lg="6" md="6" className="hero__img-container">

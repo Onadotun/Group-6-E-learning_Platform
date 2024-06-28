@@ -21,7 +21,8 @@
 }
 
 .nav__item a:hover {
-  color: #17bf9e;
+  color: #3659d5;
+  text-decoration: underline;
 }
 
 .nav__right p {

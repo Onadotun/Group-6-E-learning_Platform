@@ -41,7 +41,9 @@ const Courses = () => {
                 </p>
               </div>
               <div className="w-50 text-end">
-                <button className="btn">See All</button>
+                <button className="btn" style={{ background: "#3659D5" }}>
+                  See All
+                </button>
               </div>
             </div>
           </Col>
@@ -52,13 +54,13 @@ const Courses = () => {
                 alt="Web Development"
                 style={courseImageStyle}
               />
-              <h4>Web Development</h4>
+              <h6>Knitting, Core tailoring training, Fashion skills.</h6>
             </div>
           </Col>
           <Col lg="4" md="6" sm="12">
             <div className="course__item" style={courseItemStyle}>
               <img src={courseImg2} alt="Make-up" style={courseImageStyle} />
-              <h4>Make-up</h4>
+              <h6>Carving, Art skill development,</h6>
             </div>
           </Col>
           <Col lg="4" md="6" sm="12">
@@ -68,7 +70,7 @@ const Courses = () => {
                 alt="Watercolor Painting"
                 style={courseImageStyle}
               />
-              <h4>Watercolor Painting</h4>
+              <h6>Watercolor Painting</h6>
             </div>
           </Col>
         </Row>

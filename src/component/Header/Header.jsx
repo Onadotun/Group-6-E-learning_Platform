@@ -1,3 +1,4 @@
+import axios from "axios";
 import React, { useRef, useState } from "react";
 import {
   Container,
@@ -26,17 +27,47 @@ const Header = () => {
   const menuRef = useRef();
   const [loginModal, setLoginModal] = useState(false);
   const [signupModal, setSignupModal] = useState(false);
+  const [signupData, setSignupData] = useState({
+    firstname: "",
+    surname: "",
+    phone: "",
+    email: "",
+    password: "",
+    confirmPassword: "",
+  });
 
   const toggleLoginModal = () => setLoginModal(!loginModal);
   const toggleSignupModal = () => setSignupModal(!signupModal);
   const menuToggle = () => menuRef.current.classList.toggle("active__menu");
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setSignupData({ ...signupData, [name]: value });
+  };
+
+  const handleSignup = async () => {
+    try {
+      const response = await axios.post(
+        "http://localhost:5000/api/auth/signup",
+        signupData
+      );
+      console.log(response.data);
+    } catch (err) {
+      console.error("Error signing up:", err);
+    }
+  };
 
   return (
     <header className="header">
       <Container>
         <div className="navigation d-flex align-items-center justify-content-between">
           <div className="logo">
-            <h5 className="d-flex align-items-center">SkillSphere™</h5>
+            <h5
+              className="d-flex align-items-center"
+              style={{ color: "#3659D5" }}
+            >
+              SkillSphere™
+            </h5>
           </div>
 
           <div className="nav d-flex align-items-center gap-5">
@@ -51,6 +82,7 @@ const Header = () => {
                   <button
                     className="btn btn-primary"
                     onClick={toggleSignupModal}
+                    style={{ background: "#3659d5" }}
                   >
                     Sign Up
                   </button>
@@ -59,6 +91,7 @@ const Header = () => {
                   <button
                     className="btn btn-secondary"
                     onClick={toggleLoginModal}
+                    style={{ background: "#3659d5" }}
                   >
                     Login
                   </button>
@@ -128,6 +161,8 @@ const Header = () => {
                 name="firstname"
                 id="signupFirstname"
                 placeholder="Enter your firstname"
+                value={signupData.firstname}
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
@@ -137,6 +172,8 @@ const Header = () => {
                 name="surname"
                 id="signupSurname"
                 placeholder="Enter your surname"
+                value={signupData.surname}
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
@@ -146,6 +183,8 @@ const Header = () => {
                 name="phone"
                 id="signupPhone"
                 placeholder="Enter your phone number"
+                value={signupData.phone}
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
@@ -155,6 +194,8 @@ const Header = () => {
                 name="email"
                 id="signupEmail"
                 placeholder="Enter your email"
+                value={signupData.email}
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
@@ -164,6 +205,8 @@ const Header = () => {
                 name="password"
                 id="signupPassword"
                 placeholder="Enter your password"
+                value={signupData.password}
+                onChange={handleChange}
               />
             </FormGroup>
             <FormGroup>
@@ -173,12 +216,14 @@ const Header = () => {
                 name="confirmPassword"
                 id="signupConfirmPassword"
                 placeholder="Confirm your password"
+                value={signupData.confirmPassword}
+                onChange={handleChange}
               />
             </FormGroup>
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={toggleSignupModal}>
+          <Button color="primary" onClick={handleSignup}>
             Sign Up
           </Button>
           <Button color="secondary" onClick={toggleSignupModal}>
