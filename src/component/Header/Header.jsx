@@ -82,7 +82,7 @@ const Header = () => {
                   <button
                     className="btn btn-primary"
                     onClick={toggleSignupModal}
-                    style={{ background: "#3659d5" }}
+                    style={{ background: "#3659d5", border: "1px solid #fff" }}
                   >
                     Sign Up
                   </button>
@@ -91,7 +91,7 @@ const Header = () => {
                   <button
                     className="btn btn-secondary"
                     onClick={toggleLoginModal}
-                    style={{ background: "#3659d5" }}
+                    style={{ background: "#3659d5", border: "1px solid #fff" }}
                   >
                     Login
                   </button>
@@ -116,7 +116,9 @@ const Header = () => {
 
       {/* Login Modal */}
       <Modal isOpen={loginModal} toggle={toggleLoginModal}>
-        <ModalHeader toggle={toggleLoginModal}>Login</ModalHeader>
+        <ModalHeader toggle={toggleLoginModal} style={{ color: "#3659D5" }}>
+          Login
+        </ModalHeader>
         <ModalBody>
           <Form>
             <FormGroup>
@@ -140,10 +142,18 @@ const Header = () => {
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={toggleLoginModal}>
+          <Button
+            color="primary"
+            onClick={toggleLoginModal}
+            style={{ background: "#3659D5" }}
+          >
             Login
           </Button>
-          <Button color="secondary" onClick={toggleLoginModal}>
+          <Button
+            color="secondary"
+            onClick={toggleLoginModal}
+            style={{ background: "#3659D5" }}
+          >
             Cancel
           </Button>
         </ModalFooter>
@@ -151,7 +161,9 @@ const Header = () => {
 
       {/* Signup Modal */}
       <Modal isOpen={signupModal} toggle={toggleSignupModal}>
-        <ModalHeader toggle={toggleSignupModal}>Sign Up</ModalHeader>
+        <ModalHeader toggle={toggleSignupModal} style={{ color: "#3659D5" }}>
+          Sign Up
+        </ModalHeader>
         <ModalBody>
           <Form>
             <FormGroup>
@@ -223,10 +235,18 @@ const Header = () => {
           </Form>
         </ModalBody>
         <ModalFooter>
-          <Button color="primary" onClick={handleSignup}>
+          <Button
+            color="primary"
+            onClick={handleSignup}
+            style={{ background: "#3659D5" }}
+          >
             Sign Up
           </Button>
-          <Button color="secondary" onClick={toggleSignupModal}>
+          <Button
+            color="secondary"
+            onClick={toggleSignupModal}
+            style={{ background: "#3659D5" }}
+          >
             Cancel
           </Button>
         </ModalFooter>
