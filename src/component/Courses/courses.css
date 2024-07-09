@@ -35,3 +35,47 @@
 .course__top__left h2 {
   font-weight: 600;
 }
+
+.courses .contact h2 {
+  margin-bottom: 2rem;
+}
+
+.courses .contact form {
+  max-width: 70rem;
+  margin: 0.5rem auto;
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.courses .contact form .input-box {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.courses .contact form .input-box input,
+.courses .contact form textarea {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+  border-radius: 0.8rem;
+}
+
+.courses .contact form .input-box input {
+  width: 49%;
+}
+
+.courses .contact form textarea {
+  resize: none;
+}
+
+.courses .contact form .btn {
+  margin-top: 2rem;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .courses .contact form .input-box input {
+    width: 100%;
+  }
+}

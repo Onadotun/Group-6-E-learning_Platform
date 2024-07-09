@@ -21,3 +21,7 @@
 .about__content h2 {
   font-weight: 600;
 }
+.about__content #about {
+  font-weight: 600;
+  font-size: 2rem;
+}

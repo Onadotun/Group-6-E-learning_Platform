@@ -10,13 +10,17 @@ const HeroSection = () => {
         <Row className="justify-content-center">
           <Col lg="6" md="6" className="hero">
             <div className="hero__content">
-              <h2 className="mb-4 hero__title">
-                Anytime Anywhere <br /> Learn on your <br /> Suitable Schedule
+              <h2 id="home" style={{ color: "#3659d5" }}>
+                Home{" "}
               </h2>
+
+              <h6 className="mb-4 hero__title">
+                Anytime Anywhere Learn on your Suitable Schedule
+              </h6>
               <p className="mb-5">
-                Lorem ipsum dolor sit amet consectetur <br /> adipisicing elit.
-                Aut saepe voluptatum earum delectus <br /> deserunt id iste,
-                quas officiis et repellat!
+                "Beyond technical skills: Courses that help you excel in
+                communication, time management, and customer relationships,
+                leading to greater success."
               </p>
             </div>
             <div className="search">

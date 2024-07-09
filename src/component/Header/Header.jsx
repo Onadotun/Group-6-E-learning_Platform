@@ -16,11 +16,11 @@ import "remixicon/fonts/remixicon.css";
 import "./Header.css";
 
 const navLinks = [
-  { display: "Home", url: "#" },
-  { display: "About", url: "#" },
-  { display: "Courses", url: "#" },
-  { display: "Pages", url: "#" },
-  { display: "Blog", url: "#" },
+  { display: "Home", href: "#home" },
+  { display: "About", href: "#about" },
+  { display: "Courses", href: "#courses" },
+  { display: "videos", href: "#videos" },
+  { display: "Contact", href: "#contact" },
 ];
 
 const Header = () => {
@@ -75,7 +75,7 @@ const Header = () => {
               <ul className="nav__list">
                 {navLinks.map((item, index) => (
                   <li key={index} className="nav__item">
-                    <a href={item.url}>{item.display}</a>
+                    <a href={item.href}>{item.display}</a>
                   </li>
                 ))}
                 <li className="nav__item">

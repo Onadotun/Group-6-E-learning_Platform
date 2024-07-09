@@ -119,7 +119,7 @@ const Footer = () => {
 
             <p>Address: Ikeja, Lagos State, Nigeria</p>
             <p> Phone: +234 000 00 000 </p>
-            <p>Email: example@gmail.com</p>
+            <p>Email: tmaprojectteam6@gmail.com</p>
           </Col>
         </Row>
       </Container>

@@ -18,11 +18,16 @@ const AboutUs = () => {
 
           <Col lg="6" md="6">
             <div className="about__content">
-              <h2>About Us</h2>
+              <h2 id="about" style={{ color: "#3659d5" }}>
+                About Skillsphere
+              </h2>
+
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Excepturi cupiditate animi deserunt libero nesciunt corporis
-                explicabo nobis ex quo molestiae!
+                At Skillsphere, we’re dedicated to going beyond technical
+                skills. Our courses are crafted to help you excel in
+                communication, time management, and customer relationships,
+                setting the stage for greater success in today’s fast-paced
+                business world.
               </p>
 
               <div className="about__counter">

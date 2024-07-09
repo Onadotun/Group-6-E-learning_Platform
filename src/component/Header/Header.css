@@ -15,7 +15,7 @@
 .nav__item a {
   font-weight: 500;
   font-size: 1.1rem;
-  color: #fff;
+  color: #3659d5;
   text-decoration: none;
   transition: 0.3s;
 }
@@ -60,7 +60,7 @@
   .nav__list {
     position: absolute;
     background: #3659d5;
-    color: #3659d5;
+    color: #fff;
     top: 0;
     right: 0;
     width: 250px;
@@ -70,6 +70,12 @@
     align-items: center;
     z-index: 999;
     padding-top: 1px;
+  }
+
+  .nav__item a {
+    font-weight: 400;
+    font-size: 1.1rem;
+    color: #fff;
   }
 
   .mobile__menu {
